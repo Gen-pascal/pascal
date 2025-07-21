@@ -1,16 +1,11 @@
 using UnityEngine;
 
+// SpawnPoint.cs
 public class SpawnPoint : MonoBehaviour
 {
-    public string spawnID; // 예: "FromForest", "FromTown"
+    // 이 변수만 남아있으면 됩니다.
+    public string spawnID;
 
-    void Start()
-    {
-        if (GameManager.Instance != null && GameManager.Instance.lastEnteredDoorID == spawnID)
-        {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
-                player.transform.position = transform.position;
-        }
-    }
+    // Start() 함수와 그 안의 모든 코드는 삭제해주세요.
+    // 만약 남아있다면 GameManager의 로직과 충돌할 수 있습니다.
 }
