@@ -3,28 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\pascal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|c:\\users\\admin\\desktop\\pascal\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|c:\\users\\admin\\desktop\\pascal\\assets\\scripts\\quest\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|c:\\users\\admin\\desktop\\pascal\\assets\\scripts\\quest\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Runtime\\TMP\\TextMeshProUGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui\\Runtime\\TMP\\TextMeshProUGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\quest\\missionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest\\missionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\quest\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\workstation\\computerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\workstation\\computerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\interaction scripts\\doorportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction scripts\\doorportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\interaction scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Dsek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Dsek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\quest\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\fromtilet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fromtilet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\camera scripts\\cameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera scripts\\cameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\interaction scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|C:\\Users\\admin\\Desktop\\pascal\\assets\\scripts\\player scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C5129A1-0A35-91B3-5435-A80AE7E4EDBB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,36 +70,122 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DoorPortal.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
-              "RelativeToolTip": "Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "Title": "DialogueManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\DialogueManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\DialogueManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\DialogueManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Quest\\DialogueManager.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwFcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T10:43:29.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T10:41:59.763Z",
+              "WhenOpened": "2025-07-28T09:47:11.737Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TextMeshProUGUI.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "ViewState": "AgIAAMQHAAAAAAAAAAAQwNQHAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T07:14:36.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TMP_BaseEditorPanel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "ViewState": "AgIAAHcBAAAAAAAAAAAAANcBAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T11:24:10.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dsek.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Dsek.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dsek.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Dsek.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dsek.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T11:12:35.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FromTilet.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\FromTilet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FromTilet.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\FromTilet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FromTilet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T11:12:15.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuestManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\QuestManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\QuestManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\QuestManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Quest\\QuestManager.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T11:09:49.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CameraManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Camera Scripts\\CameraManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera Scripts\\CameraManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Camera Scripts\\CameraManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera Scripts\\CameraManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T09:50:21.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DoorPortal.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\interaction Scripts\\DoorPortal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T10:43:29.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAABIwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T10:41:59.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SpawnPoint.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\interaction Scripts\\SpawnPoint.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\interaction Scripts\\SpawnPoint.cs",
@@ -75,20 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TMP_BaseEditorPanel.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
-              "ViewState": "AgIAAHcBAAAAAAAAAAAAANcBAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T11:24:10.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "PlayerMove.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Player Scripts\\PlayerMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\PlayerMove.cs",
@@ -100,15 +209,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DialogueTrigger.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\DialogueTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\DialogueTrigger.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\DialogueTrigger.cs",
               "RelativeToolTip": "Assets\\Scripts\\Quest\\DialogueTrigger.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAswC8AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T10:03:04.602Z"
+              "WhenOpened": "2025-07-10T10:03:04.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ComputerInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\WorkStation\\ComputerInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WorkStation\\ComputerInteraction.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\WorkStation\\ComputerInteraction.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WorkStation\\ComputerInteraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T11:14:44.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MissionUI.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\MissionUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\MissionUI.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Assets\\Scripts\\Quest\\MissionUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Quest\\MissionUI.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T12:07:54.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TMP_BaseEditorPanel.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\pascal\\Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "ViewState": "AgIAAHcBAAAAAAAAAAAAANcBAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T11:24:10.567Z"
             }
           ]
         },

@@ -1,30 +1,73 @@
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class QuestManager : MonoBehaviour
 {
     public static QuestManager Instance { get; private set; }
-    private List<string> quests = new List<string>();
+    public Dictionary<string, QuestData> activeQuests = new Dictionary<string, QuestData>();
 
     void Awake()
     {
-        // ½Ì±ÛÅæ ¼³Á¤
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-        // (¼±ÅÃ) ¾À ÀüÈ¯ ½Ã ÆÄ±«µÇÁö ¾Ê°Ô ÇÏ°í ½ÍÀ¸¸é:
-        // DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // ¿ÜºÎ¿¡¼­ Äù½ºÆ®¸¦ Ãß°¡ÇÒ ¶§ ºÎ¸£´Â ÇÔ¼ö
-    public void AddQuest(string quest)
+    // ì–´ë–¤ ì˜¤ë¸Œì íŠ¸ê°€ í€˜ìŠ¤íŠ¸ë¥¼ ì¶”ê°€í–ˆëŠ”ì§€ ì•Œ ìˆ˜ ìžˆë„ë¡ GameObject questGiverë¥¼ ë°›ìŠµë‹ˆë‹¤.
+    // GameObject questGiverë¥¼ ë§ˆì§€ë§‰ ì¸ìˆ˜ë¡œ ì¶”ê°€í•©ë‹ˆë‹¤.
+    public void AddQuest(string questID, string title, string objective, GameObject questGiver)
     {
-        if (quests.Contains(quest))
-            return; // Áßº¹ ¹æÁö
+        // ì–´ë–¤ ì˜¤ë¸Œì íŠ¸ê°€ í€˜ìŠ¤íŠ¸ ì¶”ê°€ë¥¼ ìš”ì²­í–ˆëŠ”ì§€ ì½˜ì†”ì— ë©”ì‹œì§€ë¥¼ ì¶œë ¥í•©ë‹ˆë‹¤.
+        Debug.Log(questGiver.name + " ì˜¤ë¸Œì íŠ¸ê°€ '" + title + "' í€˜ìŠ¤íŠ¸ ì¶”ê°€ë¥¼ ìš”ì²­í–ˆìŠµë‹ˆë‹¤.");
 
-        quests.Add(quest);
-        // UI °»½Å
-        MissionUI.Instance.UpdateMissionList(quests);
+        if (activeQuests.ContainsKey(questID))
+        {
+            Debug.LogWarning("í•˜ì§€ë§Œ ì´ë¯¸ ì¡´ìž¬í•˜ëŠ” í€˜ìŠ¤íŠ¸ë¼ì„œ ì¶”ê°€í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
+            return;
+        }
+
+        QuestData newQuest = new QuestData(title, objective);
+        activeQuests.Add(questID, newQuest);
+        UpdateMissionUI();
     }
 
-    // (¼±ÅÃ) ³ªÁß¿¡ Äù½ºÆ® ¿Ï·á, º¸»ó µî ¸Þ¼­µå Ãß°¡ °¡´É
+    public void CompleteQuest(string questID)
+    {
+        if (activeQuests.ContainsKey(questID) && !activeQuests[questID].isCompleted)
+        {
+            activeQuests[questID].isCompleted = true;
+            UpdateMissionUI();
+            CheckAllQuestsCompleted();
+        }
+    }
+
+    private void CheckAllQuestsCompleted()
+    {
+        if (activeQuests.Count > 0 && activeQuests.Values.All(quest => quest.isCompleted))
+        {
+            Debug.Log("ëª¨ë“  í€˜ìŠ¤íŠ¸ ì™„ë£Œ! í‡´ê·¼í•©ë‹ˆë‹¤.");
+            StartCoroutine(GoHomeSequence());
+        }
+    }
+
+    private void UpdateMissionUI()
+    {
+        if (MissionUI.Instance != null)
+        {
+            MissionUI.Instance.UpdateMissionList(activeQuests);
+        }
+    }
+
+    IEnumerator GoHomeSequence()
+    {
+        yield return new WaitForSeconds(2f);
+    }
 }

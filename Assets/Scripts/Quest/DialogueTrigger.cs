@@ -1,73 +1,92 @@
 using UnityEngine;
 using UnityEngine.Events;
-using System.Collections; // Coroutine을 사용하기 위해 추가!
+using System.Collections;
 
+/// <summary>
+/// 플레이어가 범위 내에 들어와 상호작용하면 지정된 대화를 시작시키는 스크립트입니다.
+/// 대화가 끝나면 특정 이벤트를 호출할 수 있습니다.
+/// </summary>
+[RequireComponent(typeof(BoxCollider2D))] // 이 컴포넌트는 BoxCollider2D가 필수임을 명시합니다.
 public class DialogueTrigger : MonoBehaviour
 {
-    [Header("Dialogue Settings")]
+    [Header("대화 내용")]
+    [Tooltip("이 트리거가 실행할 대화 데이터입니다.")]
     public Dialogue dialogue;
+
+    [Header("대화 완료 후 이벤트")]
+    [Tooltip("대화가 성공적으로 완료되었을 때 호출될 유니티 이벤트입니다. 인스펙터 창에서 설정할 수 있습니다.")]
     public UnityEvent onDialogueComplete;
 
-    private bool playerInRange = false;
-    private bool isReady = false; // <<-- 1. 트리거 준비 상태 변수 추가
+    // 이 트리거가 '화장실 가기' 퀘스트를 주는 트리거인지 체크하는 옵션입니다.
+    [SerializeField] private bool givesBathroomQuest = false;
 
-    // Start 함수 추가
-    void Start()
+    private bool isPlayerInRange = false;
+    private bool canInteract = false;
+
+    private void Awake()
     {
-        // 게임이 시작되면 바로 트리거가 활성화되지 않도록
-        // 짧은 지연을 주는 코루틴을 실행합니다.
-        StartCoroutine(InitializeTrigger());
+        // 콜라이더가 트리거 모드인지 확인하고 아니라면 자동으로 설정합니다.
+        GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
-    // 코루틴 함수 추가
-    IEnumerator InitializeTrigger()
+    private void Start()
     {
-        // 첫 프레임 렌더링이 끝날 때까지 기다립니다.
-        // 이렇게 하면 씬 로딩 시 발생하는 물리 충돌을 무시할 수 있습니다.
-        yield return new WaitForEndOfFrame();
-        isReady = true; // <<-- 2. 이제 트리거가 작동할 준비가 됨
+        // 씬이 시작되자마자 바로 상호작용하는 것을 방지하기 위해 짧은 지연을 줍니다.
+        StartCoroutine(InteractionCooldown());
     }
 
-    void Update()
+    private IEnumerator InteractionCooldown()
     {
-        if (playerInRange
-            && !DialogueManager.isTalking
-            && Input.GetKeyDown(KeyCode.F))
+        yield return new WaitForSeconds(0.5f);
+        canInteract = true;
+    }
+
+    private void Update()
+    {
+        // 플레이어가 범위 내에 있고, 상호작용이 가능하며, 다른 대화가 진행 중이 아닐 때 'F' 키를 누르면 대화를 시작합니다.
+        if (isPlayerInRange && canInteract && !DialogueManager.isTalking && Input.GetKeyDown(KeyCode.F))
         {
             DialogueManager.Instance.StartDialogue(dialogue, OnComplete);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    /// <summary>
+    /// DialogueManager에 의해 대화가 모두 끝났을 때 호출되는 콜백 함수입니다.
+    /// </summary>
+    private void OnComplete()
     {
-        // isReady가 false이면(아직 준비 안됐으면) 아무것도 안 함
-        if (!isReady) return; // <<-- 3. 준비가 됐을 때만 아래 코드가 실행되도록 함
-
-        if (other.CompareTag("Player"))
+        // 이 트리거가 '화장실 가기' 퀘스트를 주도록 설정되었다면, 퀘스트를 추가합니다.
+        if (givesBathroomQuest)
         {
-            playerInRange = true;
-            Debug.Log($"[{gameObject.name}] 플레이어 진입 → playerInRange = true");
+            GiveBathroomQuest();
         }
-    }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        // 퇴장 로직은 isReady와 상관없이 작동해도 괜찮습니다.
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = false;
-            Debug.Log($"[{gameObject.name}] 플레이어 이탈 → playerInRange = false");
-        }
-    }
-
-    void OnComplete()
-    {
+        // 인스펙터에서 설정한 UnityEvent를 호출합니다.
         onDialogueComplete?.Invoke();
     }
 
-    // OnTriggerStay2D는 현재 사용되지 않으므로 삭제하거나 주석 처리해도 좋습니다.
-    // void OnTriggerStay2D(Collider2D other)
-    // {
-    //     ...
-    // }
+    /// <summary>
+    /// '화장실 가기' 퀘스트를 QuestManager에 추가합니다.
+    /// </summary>
+    private void GiveBathroomQuest()
+    {
+        // 퀘스트 ID, 제목, 세부 목표, 퀘스트를 준 오브젝트 정보를 전달합니다.
+        QuestManager.Instance.AddQuest("goToBathroom", "화장실 가기", "화장실 문과 상호작용", this.gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInRange = false;
+        }
+    }
 }

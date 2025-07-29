@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Camera Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\interaction Scripts\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\interaction Scripts\DoorPortal.cs" />
+    <Compile Include="Assets\Scripts\Quest\QuestData.cs" />
     <Compile Include="Assets\Scripts\Quest\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Quest\MissionUI.cs" />
     <Compile Include="Assets\Scripts\Camera Scripts\CameraManager.cs" />
@@ -73,6 +74,8 @@
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
     <Compile Include="Assets\Scripts\FromTilet.cs" />
+    <Compile Include="Assets\Scripts\WorkStation\DsekTrigger.cs" />
+    <Compile Include="Assets\Scripts\WorkStation\ComputerInteraction.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Quest\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Quest\DialogueManager.cs" />

@@ -7,33 +7,48 @@ public class MissionUI : MonoBehaviour
     public static MissionUI Instance { get; private set; }
 
     [Header("UI Elements")]
-    public GameObject missionPanel;  // Panel GameObject
-    public TMP_Text missionText;     // 텍스트 컴포넌트
+    public Transform questListContainer;
+    public GameObject questItemPrefab;
 
     void Awake()
     {
-        // 싱글톤 설정
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
 
-    void Update()
+    public void UpdateMissionList(Dictionary<string, QuestData> quests)
     {
-        // Tab 키 누를 때마다 켜고 끄기
-        if (Input.GetKeyDown(KeyCode.Tab))
+        foreach (Transform child in questListContainer)
         {
-            missionPanel.SetActive(!missionPanel.activeSelf);
+            Destroy(child.gameObject);
         }
-    }
 
-    // QuestManager에서 호출
-    public void UpdateMissionList(List<string> quests)
-    {
-        // 빌드업: 모든 퀘스트 앞에 • 붙이고 줄바꿈
-        missionText.text = "";
-        foreach (string q in quests)
+        foreach (var questPair in quests)
         {
-            missionText.text += "• " + q + "\n";
+            QuestData questData = questPair.Value;
+            GameObject questItemGO = Instantiate(questItemPrefab, questListContainer);
+
+            TMP_Text titleText = questItemGO.transform.Find("TextContainer/TitleText").GetComponent<TMP_Text>();
+            TMP_Text objectiveText = questItemGO.transform.Find("TextContainer/ObjectiveText").GetComponent<TMP_Text>();
+
+            if (titleText != null && objectiveText != null)
+            {
+                titleText.text = questData.title;
+                objectiveText.text = "• " + questData.objective;
+
+                // 제목의 폰트 스타일은 항상 Normal로 유지합니다.
+                titleText.fontStyle = FontStyles.Normal;
+
+                // 퀘스트 완료 여부에 따라 '세부 목표'의 폰트 스타일만 변경합니다.
+                if (questData.isCompleted)
+                {
+                    objectiveText.fontStyle = FontStyles.Strikethrough;
+                }
+                else
+                {
+                    objectiveText.fontStyle = FontStyles.Normal;
+                }
+            }
         }
     }
 }
